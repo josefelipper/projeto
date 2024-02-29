@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+:root {
+    --cor1: #6F1D1B;
+    --cor2: #FFE6A7;
+    --cor3: #BB9457;
+    --cor4: #99582A;
+    --cor5: #432818;
+}
+
+#cabecalho {
+    padding: 8px;
+    width: auto;
+    background-color: var(--cor2);
+    justify-content: space-between;
+    height: 100px;
+}
+
+#cabecalho > h1 {
+    color: var(--cor5);
+    border-radius: 6px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 15%;
+        color: transparent;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 1.6%;
+        width: 300%;
+    }
+}
+
+h1 {
+    text-indent: 10px;
+    color: var(--cor2);
+    text-align: center;
+}
+
+#navegador {
+    padding: 10px 0px 10px 10px;
+    background-color: var(--cor5);
+    border-radius: 5px;
+}
+
+#navegador a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#navegador > a:hover {
+    text-decoration: underline;
+    border-bottom: var(--cor7) solid;
+}
+
+main {
+    height: 500px;
+    box-shadow: inset 0px 0px 15px 2px black;
+    /*Shorthand - background
+    color > image > position > / > size > repeat > attachment */
+    background: var(--cor5) url("https://images.squarespace-cdn.com/content/v1/6254d86747a40830ac5c16b1/4ad4904e-4a60-4121-87bd-01b7d08fefc5/Vanilla-caffe-loja-sirio.jpg?format=2500w") center center / cover no-repeat fixed;
+    animation-name: background01;
+    animation-duration: 2s;
+}
+
+@keyframes background01 {
+    from {
+        background: var(--cor5) url("https://images.squarespace-cdn.com/content/v1/6254d86747a40830ac5c16b1/4ad4904e-4a60-4121-87bd-01b7d08fefc5/Vanilla-caffe-loja-sirio.jpg?format=2500w") center bottom / cover no-repeat fixed;
+    }
+    to {
+        background: var(--cor5) url("https://images.squarespace-cdn.com/content/v1/6254d86747a40830ac5c16b1/4ad4904e-4a60-4121-87bd-01b7d08fefc5/Vanilla-caffe-loja-sirio.jpg?format=2500w") center center/ cover no-repeat fixed;
+    }
+}
+
+main > div > h1 {
+    background-color: #4328188e;
+    color: var(--cor2);
+    text-indent: 0px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main > a {
+    padding-top: 10px;
+    margin: 2% auto 5% auto;
+    display: block;
+    text-decoration: none;
+    width: 50vw;
+    height: 32px;
+    max-width: 200px;
+    font-size: 1.5em;
+    background-color: #592c2831;
+    color: white;
+    border-radius: 90px;
+    text-shadow: 2px 2px 5px var(--preto);
+    text-align: center;
+    transition: all  0.3s ease-in-out;
+}
+
+main > a:hover {
+    max-width: 20vw;
+    background-color: var(--cor2);
+    color:var(--cor1);
+    text-shadow: none;
+    box-shadow: var(--preto) 1px 1px 10px;
+}
+
+h2 {
+    text-align: center;
+    width: auto;
+    background-color: var(--cor4);
+}
+
+@media screen and (width:90px) {
+    font-size: 9px;
+
+}    
+#sobre {
+    display: flex;
+    color: var(--cor2);
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sobre1 {
+    background-color: var(--cor5);
+    width: 40%;
+    height: 20%;
+    max-height: 300px;
+    margin: 2% 0% 0% 3%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px #24111d;
+    font-size: 1.1vw;
+}
+
+#sobre2 {
+    padding: 0px 0px 9px 0px;
+}
+
+#sobre3 {
+    padding: 10px 0px 12px 0px;
+}
+
+.imagem {
+}
